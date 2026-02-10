@@ -28,4 +28,9 @@ app.get('/steal', (req, res) => {
 
 app.get('/sessions', (req, res) => {
     res.json(sessions);
-  
+});
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log('🎯 Server running on port', PORT);
+});
